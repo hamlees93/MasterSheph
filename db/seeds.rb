@@ -12,3 +12,14 @@
     status: 0
   )
 end
+
+puts "Created 20 recipes"
+
+40.times do |i|
+  Ingredient.create(
+    name: Faker::Food.ingredient,
+    quantity: rand(20)
+  )
+end
+
+puts "Created 40 ingedients"
